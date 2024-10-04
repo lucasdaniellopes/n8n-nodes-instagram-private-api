@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-instagram-private-api",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Node para integração com Instagram Private API no n8n",
   "main": "lib/instagramPrivateApi.js",
   "keywords": [
