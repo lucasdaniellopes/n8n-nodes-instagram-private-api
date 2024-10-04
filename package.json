@@ -2,7 +2,7 @@
   "name": "n8n-nodes-instagram-private-api",
   "version": "1.0.9",
   "description": "Node para integração com Instagram Private API no n8n",
-  "main": "instagramPrivateApi.js",
+  "main": "lib/instagramPrivateApi.js",
   "keywords": [
     "n8n",
     "instagram",
@@ -19,7 +19,13 @@
   },
   "n8n": {
     "nodes": [
-      "instagramPrivateApi.js"
+      "lib/instagramPrivateApi.js"
     ]
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
