@@ -1,21 +1,22 @@
 {
   "name": "n8n-nodes-instagram-private-api",
-  "version": "1.0.10",
+  "version": "1.0.0",
   "description": "Node para integração com Instagram Private API no n8n",
   "main": "lib/instagramPrivateApi.js",
   "keywords": [
     "n8n",
     "instagram",
-    "node"
+    "node",
+    "n8n-community-node-package"
   ],
-  "author": "Lucas Daniel Lopes Brasileiro",
+  "author": "Seu Nome",
   "license": "MIT",
   "dependencies": {
     "instagram-private-api": "^1.45.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lucasdaniellopes/n8n-nodes-instagram-private-api"
+    "url": "https://github.com/seuUsuario/n8n-nodes-instagram-private-api"
   },
   "n8n": {
     "nodes": [
