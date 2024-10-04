@@ -8,7 +8,7 @@
     "instagram",
     "node"
   ],
-  "author": "Seu Nome",
+  "author": "Lucas Daniel Lopes Brasileiro",
   "license": "MIT",
   "dependencies": {
     "instagram-private-api": "^1.45.0",
@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "URL_DO_SEU_REPOSITORIO"
+    "url": "https://github.com/lucasdaniellopes/n8n-nodes-instagram-private-api"
   },
   "n8n": {
     "nodes": [
       {
-        "file": "InstagramPrivateApi.node.js"
+        "file": "instagramPrivateApi.node.js"
       }
     ]
   }
