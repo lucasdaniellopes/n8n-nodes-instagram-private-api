@@ -103,4 +103,6 @@ class InstagramPrivateApi {
   }
 }
 
-module.exports = InstagramPrivateApi;
+module.exports = {
+  InstagramPrivateApi,
+};
