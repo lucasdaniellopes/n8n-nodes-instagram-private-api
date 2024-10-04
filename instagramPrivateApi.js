@@ -1,52 +1,54 @@
 const { IgApiClient } = require("instagram-private-api");
 
-module.exports = {
-  description: {
-    displayName: "Instagram Private API",
-    name: "instagramPrivateApi",
-    group: ["transform"],
-    version: 1,
-    description:
-      "Obtenha informações de perfil e feed do Instagram utilizando a API privada.",
-    defaults: {
-      name: "Instagram Private API",
-    },
-    inputs: ["main"],
-    outputs: ["main"],
-    properties: [
-      {
-        displayName: "Username",
-        name: "username",
-        type: "string",
-        default: "",
-        placeholder: "Nome de usuário do Instagram",
-        description:
-          "Digite o nome de usuário do Instagram para obter informações.",
-        required: true,
+class InstagramPrivateApi {
+  constructor() {
+    this.description = {
+      displayName: "Instagram Private API",
+      name: "instagramPrivateApi",
+      group: ["transform"],
+      version: 1,
+      description:
+        "Obtenha informações de perfil e feed do Instagram utilizando a API privada.",
+      defaults: {
+        name: "Instagram Private API",
       },
-      {
-        displayName: "Instagram Username",
-        name: "instagramUsername",
-        type: "string",
-        default: "",
-        placeholder: "Seu nome de usuário do Instagram para login",
-        description: "Seu nome de usuário do Instagram.",
-        required: true,
-      },
-      {
-        displayName: "Instagram Password",
-        name: "instagramPassword",
-        type: "string",
-        default: "",
-        typeOptions: {
-          password: true,
+      inputs: ["main"],
+      outputs: ["main"],
+      properties: [
+        {
+          displayName: "Username",
+          name: "username",
+          type: "string",
+          default: "",
+          placeholder: "Nome de usuário do Instagram",
+          description:
+            "Digite o nome de usuário do Instagram para obter informações.",
+          required: true,
         },
-        placeholder: "Sua senha do Instagram para login",
-        description: "Sua senha do Instagram.",
-        required: true,
-      },
-    ],
-  },
+        {
+          displayName: "Instagram Username",
+          name: "instagramUsername",
+          type: "string",
+          default: "",
+          placeholder: "Seu nome de usuário do Instagram para login",
+          description: "Seu nome de usuário do Instagram.",
+          required: true,
+        },
+        {
+          displayName: "Instagram Password",
+          name: "instagramPassword",
+          type: "string",
+          default: "",
+          typeOptions: {
+            password: true,
+          },
+          placeholder: "Sua senha do Instagram para login",
+          description: "Sua senha do Instagram.",
+          required: true,
+        },
+      ],
+    };
+  }
 
   async execute() {
     const items = this.getInputData();
@@ -98,5 +100,7 @@ module.exports = {
 
     // Retornar os dados como JSON para o próximo nó do fluxo
     return this.helpers.returnJsonArray(responseData);
-  },
-};
+  }
+}
+
+module.exports = InstagramPrivateApi;
