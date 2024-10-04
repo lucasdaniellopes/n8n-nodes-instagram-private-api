@@ -104,5 +104,5 @@ class InstagramPrivateApi {
 }
 
 module.exports = {
-  InstagramPrivateApi,
+  InstagramPrivateApi: InstagramPrivateApi, // ou simplesmente InstagramPrivateApi
 };
